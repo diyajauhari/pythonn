@@ -1,0 +1,18 @@
+print("  WELCOME    TO   TREASURE ISLAND !!!  LET  YOUR  QUEST  BEGIN  ")
+C1 = input("You have entered the Gothams crossway , choose : RIGHT (R) or LEFT (L) ")
+if C1 == "L":
+    print("your soul has been retrieved by lord Gotham! ONTO THE NEXT QUEST")
+    C2 = input("Gotham has generously provided you a boat for yor next quest , will u wait for it or swim ? wait(W) OR SWIM(S)")
+    if C2 == "W":
+        print("GOOD CHOICE ! ONTO THE NEXT QUEST !!!")
+        C3 = input("WELL done , now is the FINAL QUEST of your journey to open the heavens gate ,"
+                   " choose a door to reveal your destiny , WHITE(WH) , GOLD(G) , RED(R)")
+        if C3 == "R":
+            print("CONGRATULATIONS , YOU HAVE WON !")
+        elif C3 == "WH":
+            print("YOU WERE KILLED BY THE WHITE LIGHT ANGEL")
+        elif C3 == "G":
+            print("you were killed by lord of riches")
+    else :
+        print("YOU MADE GOTHAM ANGRY , YOU HAVE BEEN KILLED BY HIS SOUL STONE SWORD \n .....GAME OVER.....")
+
