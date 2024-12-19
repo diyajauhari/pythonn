@@ -1,0 +1,57 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___) '''
+
+paper = '''
+  _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)    '''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+
+image = [rock , paper , scissors]
+
+
+user = int(input("type 0=rock   ,   1=paper   ,   2=scissors"))
+print("YOU HAVE CHOSEN:")
+print(image[user])
+
+
+comp = random.randint(0 , 2)
+print(f"computer has chosen {comp}")
+print(image[comp])
+
+if user>=3 or user<0 :
+    print("invalid number of choice")
+elif user==0 and comp==2:
+    print("you win")
+elif user==2 and comp==0:
+    print("YOU LOSE")
+elif comp>user :
+    print("you LOSE !")
+elif comp<user :
+    print("you WIN")
+elif comp==user:
+    print("its a draw")
+elif user>=3 or user<0 :
+    print("invalid number of choice")
+
+
+
+
+
