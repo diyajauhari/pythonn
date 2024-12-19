@@ -1,0 +1,38 @@
+print(" Welcome    to     PIZZA IBIZA !!! \n Lets take your order !")
+pizza_size = input("what is the size of pizza you want ? s = small , m = medium , l = large")
+bill = 0
+
+
+if pizza_size == "s":
+    bill += 15
+    print("small pizza = $15")
+
+elif pizza_size == "m":
+    bill += 20
+    print("medium size pizza = $20")
+
+elif pizza_size == "l" :
+    bill += 30
+    print("large size pizza = $25")
+else :
+    print("error in tying , try again ")
+
+
+pep = input("do you want pepperoni (+$2 )? yes or no  ")
+if pep == "yes":
+      if pizza_size == "s":
+        bill += 2
+      elif pizza_size == "m":
+        bill += 4
+      elif pizza_size == "l":
+        bill += 8
+
+cheese = input("do u want extra cheese ( +$5 ) ? yes , no")
+if cheese == "yes":
+        bill += 13
+print(
+print(f"your total bill is ${bill}")
+
+
+
+
